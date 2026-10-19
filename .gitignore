@@ -1,0 +1,42 @@
+# ==============================================================================
+# .gitignore for Global Retail Sales & Profit Intelligence (AdventureWorks DW)
+# Stack  : Microsoft Excel (.xlsx), Power Pivot, DAX
+# Author : Ravinder Gupta (https://github.com/ravinder0710)
+# ==============================================================================
+
+# --- Microsoft Excel & Office Temporary Lock Files (CRITICAL) ---
+# Jab aap Excel dashboard open karte hain, Windows hidden lock files banata hai
+~$*.xlsx
+~$*.xls
+~$*.xlsm
+~$*.csv
+~$*.docx
+~$*.doc
+*.tmp
+*.temp
+
+# --- Excel Auto-Recover & Backup Files ---
+*.xar
+*.xlk
+*.crdownload
+
+# --- Python & Cache Dumps (Optional ETL) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
+*.log
+
+# --- Operating System Generated Junk ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# --- IDE & Editor Settings ---
+.vscode/
+.idea/

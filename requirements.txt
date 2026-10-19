@@ -1,0 +1,30 @@
+# ==============================================================================
+# PROJECT REQUIREMENTS & ENVIRONMENT SPECIFICATIONS
+# Project : Global Retail Sales & Profit Intelligence Dashboard (AdventureWorks DW)
+# Author  : Ravinder Gupta
+# Stack   : Microsoft Excel, Power Query, Power Pivot, DAX
+# GitHub  : https://github.com/ravinder0710
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. SOFTWARE & RUNTIME PREREQUISITES
+# ------------------------------------------------------------------------------
+# Spreadsheet & Data Modeling Engine:
+#   - Microsoft Excel: 2019 / 2021 / Microsoft 365 (64-bit recommended)
+#   - In-Memory Engine: Power Pivot (xVelocity In-Memory Engine) enabled via COM Add-ins
+#   - ETL Tool: Power Query (built-in Excel Get & Transform Data)
+#
+# Operating System & Architecture:
+#   - Windows 10 / Windows 11 (64-bit required for native Excel Power Pivot engine)
+#   - RAM: 8 GB minimum (16 GB recommended for multi-table Power Pivot modeling)
+#   - Storage: 1 GB free disk space for workbook and raw data tables
+
+# ------------------------------------------------------------------------------
+# 2. PYTHON DATA AUDITING & VALIDATION LIBRARIES (OPTIONAL)
+# Installation Command: pip install -r requirements.txt
+# ------------------------------------------------------------------------------
+
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.2
+xlsxwriter>=3.1.0
