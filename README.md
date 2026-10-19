@@ -16,6 +16,16 @@ This project delivers an enterprise-grade **Global Retail Sales & Profitability 
 
 ---
 
+## 🖥️ Executive Dashboard Previews
+
+### 1️⃣ Time Analysis Dashboard
+![Time Analysis Dashboard](dashboard_time_analysis.png)
+
+### 2️⃣ Details Analysis & Deep-Dive Dashboard
+![Details Analysis Dashboard](dashboard_details_view.png)
+
+---
+
 ## 🎯 Business Problem & Core Objectives
 1. **Relational Enterprise Modeling:** Avoid denormalized single-sheet data dumping by building a clean star-schema relational model with one-to-many relationships inside Power Pivot.
 2. **Catalog & Inventory Diagnostic:** Audit catalog performance to distinguish active revenue-generating SKUs from stagnant dead inventory.
@@ -134,23 +144,13 @@ Unsold Products = [All Products] - [Sold Products]
 ```text
 adventure-works-sales-profit-excel/
 │
-├── data/
-│   ├── raw_adventure_works_tables.xlsx    # Relational source tables
-│   └── data_dictionary.md                 # Schema and table relationships
-│
-├── dashboard/
-│   └── Adventure_Works_Sales_Analysis.xlsx # Fully modeled Excel file with Power Pivot & DAX
-│
-├── reports/
-│   └── Adventure_Works_Project_Report.pdf  # Comprehensive documentation & findings
-│
-├── images/
-│   ├── dashboard_time_analysis.png        # View 1: Time Analysis Dashboard
-│   └── dashboard_details_analysis.png     # View 2: Details Analysis Dashboard
-│
-├── .gitignore                             # Ignores Excel lock files (~$*) and temp caches
-├── requirements.txt                       # Software prerequisites & Excel specifications
-└── README.md                              # Master project pitch deck & business report
+├── Adventure_Excel_Dashboard.xlsm                               # Interactive Excel dashboard with Power Pivot & in-memory DAX model
+├── Adventure_Works_Sales_Profit_Analysis_Professional_Report_v2.docx # In-depth 20+ page executive business report & KPI documentation
+├── dashboard_time_analysis.png                                  # View 1: Time Analysis Dashboard ($307M Revenue & Seasonal Trends)
+├── dashboard_details_view.png                                   # View 2: Details Analysis Dashboard (50+ Age Cohort & Product Profitability)
+├── requirements.txt                                             # Software prerequisites & Excel Power Pivot specifications
+├── .gitignore                                                   # Ignores Excel lock files (~$*) and temporary caches
+└── README.md                                                    # Master project pitch deck & executive summary
 ```
 
 ---
