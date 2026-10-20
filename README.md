@@ -157,8 +157,11 @@ adventure-works-sales-profit-excel/
 │
 ├── Adventure_Excel_Dashboard.xlsm                               # Interactive Excel dashboard with Power Pivot & in-memory DAX model
 ├── Adventure_Works_Sales_Profit_Analysis_Professional_Report_v2.docx # In-depth 20+ page executive business report & KPI documentation
+│
+├── data_architecture_pipeline.png                               # Power Pivot In-Memory xVelocity Dimensional Architecture
 ├── dashboard_time_analysis.png                                  # View 1: Time Analysis Dashboard ($307M Revenue & Seasonal Trends)
 ├── dashboard_details_view.png                                   # View 2: Details Analysis Dashboard (50+ Age Cohort & Product Profitability)
+│
 ├── requirements.txt                                             # Software prerequisites & Excel Power Pivot specifications
 ├── .gitignore                                                   # Ignores Excel lock files (~$*) and temporary caches
 └── README.md                                                    # Master project pitch deck & executive summary
