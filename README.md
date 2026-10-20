@@ -59,14 +59,25 @@ This project delivers an enterprise-grade **Global Retail Sales & Profitability 
 
 The analytical model was engineered inside **Excel's Power Pivot xVelocity In-Memory Engine**:
 
-```text
-FactInternetSales (60,400 Transactions)
-│
-├── DimProduct (606 Products: ProductKey, Product Name, Color, Model)
-├── DimCustomer (18,484 Customers: CustomerKey, BirthDate, Gender, Age-Group)
-├── DimDate (Calendar Dimension: Date, Year, Month, WeekTypes, Quarter, Day of Week)
-├── DimSalesTerritory (SalesTerritoryKey, Region, Country, Group)
-└── DimGeography (GeographyKey, City, Country, State) ──► DimCustomer
+```mermaid
+flowchart TD
+    subgraph Dimensions
+        P["DimProduct - 606 SKUs (Color, Model, Cost)"]
+        C["DimCustomer - 18,484 Accounts (Age Group, Gender)"]
+        G["DimGeography - Regional Territories"]
+        D["DimDate - Calendar Dimension (Year, Month, WeekTypes)"]
+        T["DimSalesTerritory - 6 Global Sales Regions"]
+    end
+
+    subgraph Fact
+        F["FactInternetSales - 60,400 Orders ($307M Revenue)"]
+    end
+
+    G -->|"GeographyKey"| C
+    P -->|"ProductKey"| F
+    C -->|"CustomerKey"| F
+    D -->|"OrderDateKey"| F
+    T -->|"SalesTerritoryKey"| F
 ```
 
 ### Data Modeling Highlights:
@@ -174,7 +185,6 @@ adventure-works-sales-profit-excel/
 ## 👨‍💼 Author & Contact
 **Ravinder Gupta**  
 *Data Analyst | Business Intelligence & Advanced Excel Specialist*  
-- 📍 **Location:** Alwar, Rajasthan, India  
+- 📍 **Location:** Gurugram (Delhi-NCR), India  
 - 📧 **Email:** [iamravindergupta17@gmail.com](mailto:iamravindergupta17@gmail.com)  
-- 💼 **LinkedIn:** [linkedin.com/in/ravinder-gupta-da](https://linkedin.com/in/ravinder-gupta-da)  
 - 🐙 **GitHub:** [github.com/ravinder0710](https://github.com/ravinder0710)
